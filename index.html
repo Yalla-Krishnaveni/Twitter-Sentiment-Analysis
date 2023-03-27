@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>twitter</title>
+</head>
+<body>
+<center>
+      <h2>TWITTER SENTIMENTAL ANALYSIS</h2>
+    <table>
+<form action="./predict" method="post">
+        <tr>
+            <td><label for="textbox">Enter your Tweet</label></td>
+        </tr>
+    <tr>
+       <td>
+                <textarea id="textbox" name="textbox" rows="7" cols="50" placeholder="Please Paste or Enter your tweet......"></textarea><br>
+            </td>
+    </tr>
+       <tr>
+            <td colspan="10"><input id="btn" type="submit" value="Predict" /></td>
+        </tr><br>
+       <tr>
+            <td><p>Prediction:{{prog}}</p></td>
+        </tr><br><br>
+        <tr>
+            <td><p>Probabilty:{{prob}}</p></td>
+        </tr>
+    <tr>
+        <td><p>Twitter is an online Social Media Platform where people share<br>
+             their thoughts as tweets. We may get both the good and bad<br>
+             Tweets in that. Our project is, we are going to detect whether<br>
+             the tweet is positive or negative or neutral,and also it finds the<br>
+             probability of the tweet .</p></td>
+    </tr>
+
+</form>
+            </table>
+</center>
+</body>
+</html>
